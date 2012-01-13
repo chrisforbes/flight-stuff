@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/summary_header"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Takeoff CoG"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/summary_header"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Takeoff Weight"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/cog_label"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="32.79 in" />
+
+        <TextView
+            android:id="@+id/weight_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="1670 lb" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <nz.co.ijw.aviation.CgEnvelopeView
+            android:id="@+id/cg_envelope"
+            android:layout_width="240dp"
+            android:layout_height="150dp" />
+
+    </TableRow>
+
+</TableLayout>

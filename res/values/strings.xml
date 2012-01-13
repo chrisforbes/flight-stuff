@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weight &amp; Balance</string>
+    <string name="select_unit_prompt">Select Unit</string>
+
+</resources>
